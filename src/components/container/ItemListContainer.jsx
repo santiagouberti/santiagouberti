@@ -1,9 +1,8 @@
-const ItemListContainer = () => {
+const ItemListContainer = ({greeting}) => {
 
     return(
         <>
-            <h1>Marcus Cymbals</h1>
-            <h3>Bienvenido a mi tienda de platillos artesanales</h3>
+            <h2 style={{ fontFamily: 'georgia', fontWeight: "bold", color: "Purple", fontSize: 40 }}>{greeting}</h2>        
         </>
     )
 }

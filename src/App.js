@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <NavBar brand="Marcus Cymbals"/>
-      <ItemListContainer />
+      <ItemListContainer greeting="Bienvenidos a mi tienda de Platillos Artesanales" />
     </div>
   );
 }
