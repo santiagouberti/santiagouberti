@@ -1,8 +1,19 @@
+import { useEffect, useState } from 'react'
+import ItemList from '../ItemList'
+import { getCymbals } from '../asyncmock'
+
 const ItemListContainer = ({greeting}) => {
+    const [ cymbals, setCymbals ] = useState([])
+    
+    useEffect(() => {
+        getCymbals().then(response => {
+            setCymbals(response)
+        })
+    }, [])
 
     return(
         <>
-            <h2 style={{ fontFamily: 'georgia', fontWeight: "bold", color: "Purple", fontSize: 40 }}>{greeting}</h2>        
+            <ItemList cymbals={cymbals} />
         </>
     )
 }
