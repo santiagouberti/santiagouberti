@@ -12,12 +12,12 @@ const NavBar = ({brand}) => {
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-                <Link to='/category/ride' className="nav-link" href="#Rides">Rides</Link>
-                <Link to='/category/crash' className="nav-link" href="#Crashes">Crashes</Link>
-                <Link to='/category/hihat' className="nav-link" href="#Hi Hats">Hi Hats</Link>
-                <Link to='/category/splash' className="nav-link" href="#Splashes">Splashes</Link>
+                <Link to='/category/ride' className="nav-link">Rides</Link>
+                <Link to='/category/crash' className="nav-link">Crashes</Link>
+                <Link to='/category/hihat' className="nav-link">Hi Hats</Link>
+                <Link to='/category/splash' className="nav-link">Splashes</Link>
                 <Link to='/category/fx' className="nav-link" href="#FX">FX</Link>
-                {/* <CartWidget /> */}
+                <CartWidget />
             </div>
             </div>
         </div>

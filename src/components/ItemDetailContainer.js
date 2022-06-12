@@ -14,7 +14,6 @@ const ItemDetailContainer = () => {
             setCymbal(response)
         })
     }, [])    
-    console.log(cymbal)
 
     return(
         <>

@@ -68,7 +68,7 @@ export const getCymbals = () => {
 export const getCymbalsByCategory = (categoryId) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve(cymbals.filter(cym => cym.id === categoryId))
+            resolve(cymbals.filter(c => c.category === categoryId))
         }, 200)
     })
 }
