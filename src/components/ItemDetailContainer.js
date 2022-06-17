@@ -17,7 +17,6 @@ const ItemDetailContainer = () => {
 
     return(
         <>
-            <h1>Titulo de Detalle del Cymbal</h1>
             <ItemDetail {...cymbal}/>
         </>
     )

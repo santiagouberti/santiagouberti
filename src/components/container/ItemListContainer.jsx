@@ -13,14 +13,12 @@ const ItemListContainer = ({greeting}) => {
         if(!categoryId) {
             getCymbals().then(response => {
                 setCymbals(response)
-                console.log(response)
             }).catch(error => {
                 console.log(error)
             })
         } else {
             getCymbalsByCategory(categoryId).then(response => {
                 setCymbals(response)
-                console.log(response)
             }).catch(error => {
                 console.log(error)
             })
