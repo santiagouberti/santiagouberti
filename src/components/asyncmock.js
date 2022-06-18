@@ -4,7 +4,7 @@ const cymbals = [
     price: 'U$ 160',
     category: 'crash',
     img: 'https://lh3.googleusercontent.com/dBom-tJ5Gt5awmMCAefRmvER9wBqRhpLnt2cjqWlYvk-2NaJ0zmrCUtuPpKUOO7abNaKKd8ZbTOStLQXFTLILjokn27PmSylHwWaU6VVxzGPV9Kooo87GHmXc2PNOWI-rc0mUR-9Sg',
-    stock: 1,
+    stock: 5,
     description: 'Platillo conformado a mano y torneado artesanalmente en aleación de Bronce B20 (20% Estaño - 80% Cobre). - crash'},
     {id:'2',
     name: 'CRASH 17 1312G',

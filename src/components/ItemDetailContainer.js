@@ -13,7 +13,7 @@ const ItemDetailContainer = () => {
         getCymbalsById(productId).then(response => {
             setCymbal(response)
         })
-    }, [])    
+    })
 
     return(
         <>
