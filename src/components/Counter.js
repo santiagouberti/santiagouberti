@@ -19,10 +19,14 @@ const Counter = ({ onAdd, removeItem, stock, initial = 0 }) => {
     
         return (
             <>
-                <p>{count}</p>
-                <button onClick={increment}>+</button>
-                <button onClick={decrement}>-</button>
-                <button onClick={() => onAdd(count)}>Agregar al Carrito</button>
+                <div className='btn-group'>
+                    <button type='button' className='btn btn-outline-warning' onClick={decrement}>-</button>
+                    <button type= 'button' className='btn btn-outline-dark' disabled> {count} </button>
+                    <button type='button' className='btn btn-outline-warning' onClick={increment}>+</button>
+                </div>
+                <p>
+                    <button className='btn btn-warning' onClick={() => onAdd(count)}>Agregar al Carrito</button>
+                </p>
             </>
         )
     }

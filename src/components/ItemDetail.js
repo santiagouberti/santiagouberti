@@ -25,15 +25,29 @@ const ItemDetail = ({ id, name, img, description, category, price, stock }) => {
         <>  
              <div class="card mb-3">
                 <img src={img} className="rounded mx-auto d-block" alt="{name}" />
-                <div class="card-body">
-                    <h5 class="card-title">{name}</h5>
-                    <p class="card-text">{description}</p>
-                    <p class="card-text"><small class="text-muted">{price} - Stock: {stock}</small></p>
+                <div className="card-body">
+                    <h5 className="card-title">{name}</h5>
+                    <p className="card-text">{description}</p>
+                    <p className="card-text"><small class="text-muted">{price} - Stock: {stock}</small></p>
                     <Counter onAdd={handleOnAdd} stock={stock}/>
-                    <button onClick={handleClear}>Vaciar Carrito</button>
-                    <button onClick={handleRemove}>Remover Item</button>
+                    <button className='btn btn-outline-dark' onClick={handleRemove}>Remover Item</button>
+                    <button className='btn btn-outline-dark' onClick={handleClear}>Vaciar Carrito</button>
                 </div>
             </div>
+            {/* <div className="card mb-3" style={{maxWidth: '540px'}}>
+                <div className="row g-0">
+                    <div className="col-md-4">
+                    <img src={img} className="img-fluid rounded-start" alt={name} />
+                    </div>
+                    <div className="col-md-8">
+                    <div className="card-body">
+                        <h5 className="card-title">{name}</h5>
+                        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p className="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                    </div>
+                </div>
+            </div> */}
         </>
     )
 }
