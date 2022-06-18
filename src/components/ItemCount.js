@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const Counter = ({ onAdd, removeItem, stock, initial = 0 }) => {
+const ItemCount = ({ onAdd, removeItem, stock, initial = 0 }) => {
         const [ count, setCount ] = useState(initial)
         
         const increment = () => {
@@ -31,4 +31,4 @@ const Counter = ({ onAdd, removeItem, stock, initial = 0 }) => {
         )
     }
 
-export default Counter
+export default ItemCount

@@ -3,9 +3,9 @@ import Item from "./Item"
 const ItemList = ({ cymbals }) => {
 
     return (
-        <ul>
+        <div className='container'>
             {cymbals.map(cymbal => <Item key={cymbal.id} {...cymbal}/>)}
-        </ul>
+        </div>
     )
 }
 
