@@ -38,6 +38,7 @@ const ItemDetail = ({ id, name, img, description, category, price, stock }) => {
                         }
                     <button className='btn btn-outline-dark' onClick={handleRemove}>Remover Item</button>
                     <button className='btn btn-outline-dark' onClick={handleClear}>Vaciar Carrito</button>
+                    <Link to='/' className='btn btn-outline-dark'>Volver</Link>
                 </div>
             </div>
         </>

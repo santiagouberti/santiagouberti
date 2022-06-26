@@ -1,7 +1,7 @@
 import { useState, createContext, useEffect } from 'react'
 
 //CartContext es el contexto que voy a importar desde childrens
-const CartContext = createContext ()
+const CartContext = createContext()
 
 //componente de alto orden
 export const CartProvider = ({children}) => {
@@ -43,9 +43,17 @@ export const CartProvider = ({children}) => {
         // console.log(cart)
     }
 
+    const getTotalPrice = () => {
+        let total = 0
+        cart.forEach(prod => {
+            total += prod.quantity * prod.price
+        })
+        return total
+    }
+
     return (
         <CartContext.Provider value={{
-            cart, addItem, removeItem, isInCart, clearCart, totalQuantity
+            cart, addItem, removeItem, isInCart, clearCart, totalQuantity, getTotalPrice
         }}>
             {children}
         </CartContext.Provider>
