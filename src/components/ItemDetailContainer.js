@@ -1,8 +1,8 @@
 import { useEffect,useState } from 'react'
-import { getCymbalsById } from './asyncmock'
 import ItemDetail from './ItemDetail'
 import { useParams } from 'react-router-dom'
-
+import { getDoc, doc } from 'firebase/firestore'
+import { db } from '../service/firebase'
 
 const ItemDetailContainer = () => {
     const [ cymbal, setCymbal ] = useState()
@@ -10,8 +10,14 @@ const ItemDetailContainer = () => {
     const { productId } = useParams()
 
     useEffect(() => {
-        getCymbalsById(productId).then(response => {
-            setCymbal(response)
+
+        const docRef = doc(db, 'cymbals', productId )
+        
+        getDoc(docRef).then(doc => {
+            const productFormatted = { id: doc.id, ...doc.data() }
+            setCymbal(productFormatted)
+        }).catch(error => {
+            console.log(error)
         })
     })
 

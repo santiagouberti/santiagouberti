@@ -26,12 +26,12 @@ const ItemDetail = ({ id, name, img, description, category, price, stock }) => {
 
     return ( 
         <>
-             <div class="card mb-3">
+             <div className="card mb-3">
                 <img src={img} className="rounded mx-auto d-block" alt="{name}" />
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
                     <p className="card-text">{description}</p>
-                    <p className="card-text"><small class="text-muted">{price} - Stock: {stock}</small></p>
+                    <p className="card-text"><small className="text-muted">{price} - Stock: {stock}</small></p>
                         { quantityAdded === 0 
                             ? <ItemCount onAdd={handleOnAdd} stock={stock}/>
                             : <Link className='btn btn-success'to='/cart'>Finalizar compra</Link>

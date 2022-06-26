@@ -16,7 +16,7 @@ const CartItem = ({ id, name, price, quantity, stock }) => {
             Precio: U${price} Cantidad:{quantity}
             <br></br>
             <span>
-                <button type="button" class="btn btn-warning" onClick={handleRemove}>Remover Item</button>
+                <button type="button" className="btn btn-warning" onClick={handleRemove}>Remover Item</button>
             </span>
         </li>
     )
