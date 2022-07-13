@@ -1,0 +1,28 @@
+@media (min-width: 992px) { 
+    .gondola {
+    width: 80%;
+    }
+    .narrow {
+    width: 75%;
+    }
+    .container {
+     max-width: 70%;
+   }
+   h3 a {
+    padding: 1em;     
+    margin: -1em; 
+  }
+  }
+  
+   
+  @media (min-width: 1200px) { 
+    .gondola {
+    width: 85%;
+    }
+    .narrow {
+    width: 80%;
+    }
+    .container {
+     max-width: 75%;
+   }
+}

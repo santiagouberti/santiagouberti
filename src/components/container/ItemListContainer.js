@@ -1,3 +1,4 @@
+import './ItemListContainer.css'
 import { useEffect, useState } from 'react'
 import ItemList from '../ItemList'
 import { useParams } from 'react-router-dom'
@@ -28,7 +29,7 @@ const ItemListContainer = ({greeting}) => {
 
     return(
         <>
-            <ItemList cymbals={cymbals} />
+            <ItemList className="container gondola" cymbals={cymbals} />
         </>
     )
 }
