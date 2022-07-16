@@ -18,6 +18,7 @@ Create React App
 React Dom Router
 Firebase
 Firestorm
+dot-env
 
 ## Learn More
 
