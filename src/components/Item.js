@@ -4,7 +4,6 @@ const Item = ( {id, name, price, category, img, stock, description} ) => {
 
     return (
             <div className="col-6">
-                {/* style={{width: '18rem'}} */}
                 <div className="card">
                     <img src={img} className="card-img-top" alt="cymbal" />
                     <div className="card-body">
