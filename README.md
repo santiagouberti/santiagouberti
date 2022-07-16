@@ -25,4 +25,6 @@ dot-env
 ### `npm start`
 Corre la aplicación en modo desarrollo, abrir [http://localhost:3000](http://localhost:3000) en su navegador para visualizar cambios y errores.
 
+## User Story
 
+![](https://github.com/santiagouberti/santiagouberti/blob/main/public/SU-MC-display.gif?raw=true)
